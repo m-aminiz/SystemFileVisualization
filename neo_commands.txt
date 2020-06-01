@@ -1,0 +1,163 @@
+CREATE (PrenticeHallSeriesinArtificialIntelligenceStuartRussellPeterNorvigArtificialIntelligenceAModernApproachPrenticeHallY010:File {title:'(Prentice Hall Series in Artificial Intelligence) Stuart Russell, Peter Norvig-Artificial Intelligence_ A Modern Approach-Prentice Hall (2010)'})
+CREATE (BAMS:File {title:'BAMS'})
+CREATE (fengY018:File {title:'feng2018'})
+CREATE (StrategiesandPrinciplesofDistributedMachineLearningonBigData:File {title:'Strategies and Principles of Distributed Machine Learning on Big Data'})
+CREATE (Y007HowtoReadaPaper:File {title:'2007-How to Read a Paper'})
+CREATE (Y009GoogleFluTrends:File {title:'2009-Google Flu Trends'})
+CREATE (Y014TrapsinBigDataAnalysis:File {title:'2014Traps_in_Big_Data_Analysis'})
+CREATE (Y016BigDataPrinciplesandParadigms:File {title:'2016Big_Data_Principles_and_Paradigms'})
+CREATE (Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS:File {title:'2016Machine_Learning_Models_and_Algorithms_for_Big_Data_Classification__Thinking_with_Examples_for_Effective_Learning_Shan_Suthaharan_Springer_US'})
+CREATE (ChallengesandtechniquesinBigdatasecurityandprivacy:File {title:'Challenges and techniques in Big data security and privacy'})
+CREATE (DataScienceBigDataAnalytics:File {title:'Data Science & Big Data Analytics'})
+CREATE (PrivacyPreservingEnrichedMapReducefor:File {title:'Privacy Preserving Enriched Map Reduce for'})
+CREATE (TextAnalysis:File {title:'Text Analysis'})
+CREATE (KoldaTensorsinMATLAB:File {title:'Kolda - Tensors in MATLAB'})
+CREATE (SpringerBriefsinComputerScience:File {title:'SpringerBriefs_in_Computer_Science'})
+CREATE (ClassificationDecisionTree:File {title:'Classification-Decision -Tree'})
+CREATE (ClusterEvaluation:File {title:'ClusterEvaluation'})
+CREATE (clustring:File {title:'clustring'})
+CREATE (dataminingbook:File {title:'data mining book'})
+CREATE (datawarehouseandOLAP:File {title:'data warehouse and OLAP'})
+CREATE (DBSCANOPTICS:File {title:'DBSCAN-OPTICS'})
+CREATE (HIERARCHICAL:File {title:'HIERARCHICAL'})
+CREATE (ModelEvaluationandSelection:File {title:'Model Evaluation and Selection'})
+CREATE (whatisbeyz:File {title:'what is beyz'})
+CREATE (whatisoutlieranalysis:File {title:'what is outlier analysis'})
+CREATE (HW5Report:File {title:'HW5 Report'})
+CREATE (HW6:File {title:'HW6'})
+CREATE (TarekAmrRaynaStamboliyskaauthPracticalD3jsApressY016:File {title:'Tarek Amr, Rayna Stamboliyska (auth.)-Practical D3.js-Apress (2016)'})
+CREATE (JonDuckettHTMLandCSSDesignandBuildWebsiBookFi:File {title:'[Jon_Duckett]_HTML_and_CSS_Design_and_Build_Websi(BookFi)'})
+CREATE (AI:Folder {title:'AI'})
+CREATE (BDMP:Folder {title:'BDMP'})
+CREATE (computationaldatamining:Folder {title:'computational data mining'})
+CREATE (datamining:Folder {title:'data mining'})
+CREATE (datavisualization:Folder {title:'data visualization'})
+
+CREATE (machinelearning:Tag {title:'machine learning'})
+CREATE (AIplanning:Tag {title:'AI planning'})
+CREATE (security:Tag {title:'security'})
+CREATE (IoP:Tag {title:'IoP'})
+CREATE (google:Tag {title:'google'})
+CREATE (classification:Tag {title:'classification'})
+CREATE (clustering:Tag {title:'clustering'})
+CREATE (hadoop:Tag {title:'hadoop'})
+CREATE (textmining:Tag {title:'text mining'})
+CREATE (tensor:Tag {title:'tensor'})
+CREATE (matlab:Tag {title:'matlab'})
+CREATE (matrix:Tag {title:'matrix'})
+CREATE (SVD:Tag {title:'SVD'})
+CREATE (decisiontree:Tag {title:'decision tree'})
+CREATE (datawarehouse:Tag {title:'data warehouse'})
+CREATE (OLAP:Tag {title:'OLAP'})
+CREATE (dbscan:Tag {title:'dbscan'})
+CREATE (optics:Tag {title:'optics'})
+CREATE (hierarchical:Tag {title:'hierarchical'})
+CREATE (beyz:Tag {title:'beyz'})
+CREATE (outlieranalysis:Tag {title:'outlier analysis'})
+
+CREATE
+(PrenticeHallSeriesinArtificialIntelligenceStuartRussellPeterNorvigArtificialIntelligenceAModernApproachPrenticeHallY010)-[:RELATED_TO {important:['YES']}]->(AI),
+(PrenticeHallSeriesinArtificialIntelligenceStuartRussellPeterNorvigArtificialIntelligenceAModernApproachPrenticeHallY010)-[:RELATED_TO {important:['YES']}]->(machinelearning),
+(PrenticeHallSeriesinArtificialIntelligenceStuartRussellPeterNorvigArtificialIntelligenceAModernApproachPrenticeHallY010)-[:RELATED_TO {important:['YES']}]->(AIplanning),
+(BAMS)-[:RELATED_TO {important:['YES']}]->(AIplanning),
+(BAMS)-[:RELATED_TO {important:['YES']}]->(AI),
+(BAMS)-[:RELATED_TO {important:['YES']}]->(security),
+(fengY018)-[:RELATED_TO {important:['YES']}]->(AI),
+(fengY018)-[:RELATED_TO {important:['YES']}]->(machinelearning),
+(fengY018)-[:RELATED_TO {important:['YES']}]->(security),
+(StrategiesandPrinciplesofDistributedMachineLearningonBigData)-[:RELATED_TO {important:['YES']}]->(AI),
+(StrategiesandPrinciplesofDistributedMachineLearningonBigData)-[:RELATED_TO {important:['YES']}]->(machinelearning),
+(StrategiesandPrinciplesofDistributedMachineLearningonBigData)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(StrategiesandPrinciplesofDistributedMachineLearningonBigData)-[:RELATED_TO {important:['YES']}]->(computationaldatamining),
+(Y009GoogleFluTrends)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(Y009GoogleFluTrends)-[:RELATED_TO {important:['YES']}]->(IoP),
+(Y009GoogleFluTrends)-[:RELATED_TO {important:['YES']}]->(google),
+(Y009GoogleFluTrends)-[:RELATED_TO {important:['YES']}]->(AI),
+(Y014TrapsinBigDataAnalysis)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(Y014TrapsinBigDataAnalysis)-[:RELATED_TO {important:['YES']}]->(IoP),
+(Y014TrapsinBigDataAnalysis)-[:RELATED_TO {important:['YES']}]->(google),
+(Y016BigDataPrinciplesandParadigms)-[:RELATED_TO {important:['YES']}]->(datamining),
+(Y016BigDataPrinciplesandParadigms)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(Y016BigDataPrinciplesandParadigms)-[:RELATED_TO {important:['YES']}]->(AI),
+(Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS)-[:RELATED_TO {important:['YES']}]->(classification),
+(Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS)-[:RELATED_TO {important:['YES']}]->(machinelearning),
+(Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS)-[:RELATED_TO {important:['YES']}]->(AI),
+(Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS)-[:RELATED_TO {important:['YES']}]->(clustering),
+(ChallengesandtechniquesinBigdatasecurityandprivacy)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(ChallengesandtechniquesinBigdatasecurityandprivacy)-[:RELATED_TO {important:['YES']}]->(security),
+(DataScienceBigDataAnalytics)-[:RELATED_TO {important:['YES']}]->(datamining),
+(DataScienceBigDataAnalytics)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(DataScienceBigDataAnalytics)-[:RELATED_TO {important:['YES']}]->(datavisualization),
+(PrivacyPreservingEnrichedMapReducefor)-[:RELATED_TO {important:['YES']}]->(security),
+(PrivacyPreservingEnrichedMapReducefor)-[:RELATED_TO {important:['YES']}]->(BDMP),
+(PrivacyPreservingEnrichedMapReducefor)-[:RELATED_TO {important:['YES']}]->(hadoop),
+(TextAnalysis)-[:RELATED_TO {important:['YES']}]->(datamining),
+(TextAnalysis)-[:RELATED_TO {important:['YES']}]->(textmining),
+(TextAnalysis)-[:RELATED_TO {important:['YES']}]->(AI),
+(KoldaTensorsinMATLAB)-[:RELATED_TO {important:['YES']}]->(datamining),
+(KoldaTensorsinMATLAB)-[:RELATED_TO {important:['YES']}]->(tensor),
+(KoldaTensorsinMATLAB)-[:RELATED_TO {important:['YES']}]->(matlab),
+(SpringerBriefsinComputerScience)-[:RELATED_TO {important:['YES']}]->(datamining),
+(SpringerBriefsinComputerScience)-[:RELATED_TO {important:['YES']}]->(tensor),
+(SpringerBriefsinComputerScience)-[:RELATED_TO {important:['YES']}]->(matrix),
+(SpringerBriefsinComputerScience)-[:RELATED_TO {important:['YES']}]->(SVD),
+(SpringerBriefsinComputerScience)-[:RELATED_TO {important:['YES']}]->(AI),
+(ClassificationDecisionTree)-[:RELATED_TO {important:['YES']}]->(datamining),
+(ClassificationDecisionTree)-[:RELATED_TO {important:['YES']}]->(classification),
+(ClassificationDecisionTree)-[:RELATED_TO {important:['YES']}]->(decisiontree),
+(ClassificationDecisionTree)-[:RELATED_TO {important:['YES']}]->(AI),
+(ClusterEvaluation)-[:RELATED_TO {important:['YES']}]->(datamining),
+(ClusterEvaluation)-[:RELATED_TO {important:['YES']}]->(clustering),
+(clustring)-[:RELATED_TO {important:['YES']}]->(datamining),
+(dataminingbook)-[:RELATED_TO {important:['YES']}]->(clustering),
+(dataminingbook)-[:RELATED_TO {important:['YES']}]->(classification),
+(dataminingbook)-[:RELATED_TO {important:['YES']}]->(datawarehouse),
+(datawarehouseandOLAP)-[:RELATED_TO {important:['YES']}]->(datawarehouse),
+(datawarehouseandOLAP)-[:RELATED_TO {important:['YES']}]->(OLAP),
+(DBSCANOPTICS)-[:RELATED_TO {important:['YES']}]->(clustering),
+(DBSCANOPTICS)-[:RELATED_TO {important:['YES']}]->(dbscan),
+(DBSCANOPTICS)-[:RELATED_TO {important:['YES']}]->(optics),
+(HIERARCHICAL)-[:RELATED_TO {important:['YES']}]->(clustering),
+(HIERARCHICAL)-[:RELATED_TO {important:['YES']}]->(hierarchical),
+(ModelEvaluationandSelection)-[:RELATED_TO {important:['YES']}]->(datamining),
+(ModelEvaluationandSelection)-[:RELATED_TO {important:['YES']}]->(AI),
+(whatisbeyz)-[:RELATED_TO {important:['YES']}]->(datamining),
+(whatisbeyz)-[:RELATED_TO {important:['YES']}]->(beyz),
+(whatisoutlieranalysis)-[:RELATED_TO {important:['YES']}]->(datamining),
+(whatisoutlieranalysis)-[:RELATED_TO {important:['YES']}]->(outlieranalysis),
+(whatisoutlieranalysis)-[:RELATED_TO {important:['YES']}]->(classification),
+(HW5Report)-[:RELATED_TO {important:['YES']}]->(datavisualization),
+(HW5Report)-[:RELATED_TO {important:['YES']}]->(datamining),
+(HW6)-[:RELATED_TO {important:['YES']}]->(datavisualization),
+(HW6)-[:RELATED_TO {important:['YES']}]->(google),
+(TarekAmrRaynaStamboliyskaauthPracticalD3jsApressY016)-[:RELATED_TO {important:['YES']}]->(datavisualization)CREATE
+(AI)-[:PARENT_OF]->(PrenticeHallSeriesinArtificialIntelligenceStuartRussellPeterNorvigArtificialIntelligenceAModernApproachPrenticeHallY010),
+(AI)-[:PARENT_OF]->(BAMS),
+(AI)-[:PARENT_OF]->(fengY018),
+(AI)-[:PARENT_OF]->(StrategiesandPrinciplesofDistributedMachineLearningonBigData),
+(BDMP)-[:PARENT_OF]->(Y007HowtoReadaPaper),
+(BDMP)-[:PARENT_OF]->(Y009GoogleFluTrends),
+(BDMP)-[:PARENT_OF]->(Y014TrapsinBigDataAnalysis),
+(BDMP)-[:PARENT_OF]->(Y016BigDataPrinciplesandParadigms),
+(BDMP)-[:PARENT_OF]->(Y016MachineLearningModelsandAlgorithmsforBigDataClassificationThinkingwithExamplesforEffectiveLearningShanSuthaharanSpringerUS),
+(BDMP)-[:PARENT_OF]->(ChallengesandtechniquesinBigdatasecurityandprivacy),
+(BDMP)-[:PARENT_OF]->(DataScienceBigDataAnalytics),
+(BDMP)-[:PARENT_OF]->(PrivacyPreservingEnrichedMapReducefor),
+(BDMP)-[:PARENT_OF]->(TextAnalysis),
+(computationaldatamining)-[:PARENT_OF]->(KoldaTensorsinMATLAB),
+(computationaldatamining)-[:PARENT_OF]->(SpringerBriefsinComputerScience),
+(datamining)-[:PARENT_OF]->(ClassificationDecisionTree),
+(datamining)-[:PARENT_OF]->(ClusterEvaluation),
+(datamining)-[:PARENT_OF]->(clustring),
+(datamining)-[:PARENT_OF]->(dataminingbook),
+(datamining)-[:PARENT_OF]->(datawarehouseandOLAP),
+(datamining)-[:PARENT_OF]->(DBSCANOPTICS),
+(datamining)-[:PARENT_OF]->(HIERARCHICAL),
+(datamining)-[:PARENT_OF]->(ModelEvaluationandSelection),
+(datamining)-[:PARENT_OF]->(whatisbeyz),
+(datamining)-[:PARENT_OF]->(whatisoutlieranalysis),
+(datavisualization)-[:PARENT_OF]->(HW5Report),
+(datavisualization)-[:PARENT_OF]->(HW6),
+(datavisualization)-[:PARENT_OF]->(TarekAmrRaynaStamboliyskaauthPracticalD3jsApressY016),
+(datavisualization)-[:PARENT_OF]->(JonDuckettHTMLandCSSDesignandBuildWebsiBookFi)
